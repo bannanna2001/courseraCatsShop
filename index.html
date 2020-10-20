@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Cats Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximal-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1 class="center">Cats Shop</h1>
+    </header>
+    <main>
+        <div class="container">
+            
+            <!-- Vies switch -->
+            <input class="radio radio-table" type="radio" name="view" value="list" id="list" checked>
+            <label for="list">Таблица</label>
+            
+            <input class="radio radio-list" type="radio" name="view" value="table" id="table">
+            <label for="table">Список</label>
+
+            <section class="items__container">
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/1.jpg" alt="cat with fish polka dot">
+                    </div>
+                    
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кот Басик и килька в горошек</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">С рыбкой</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_1" class="rating" value="1">
+                            <input type="radio" name="rating_cat_1" class="rating" value="2">
+                            <input type="radio" name="rating_cat_1" class="rating" value="3">
+                            <input type="radio" name="rating_cat_1" class="rating" value="4">
+                            <input type="radio" name="rating_cat_1" class="rating" value="5">
+                            <input type="radio" name="rating_cat_1" class="rating" value="6">
+                            <input type="radio" name="rating_cat_1" class="rating" value="7">
+                            <input type="radio" name="rating_cat_1" class="rating" value="8">
+                            <input type="radio" name="rating_cat_1" class="rating" value="9" checked>
+                            <input type="radio" name="rating_cat_1" class="rating" value="10">
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">1790 <span class="item__price-sign"></span></div>
+                            <div class="item__price-old">2000 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>
+                            Мягкая игрушка "Кот Басик и килька в горошек" из искусственного меха и наполнителем из
+                            гранул. Высота 20 см. Кот Басик – милый шотладский вислоухий котик с трогательными глазами и 
+                            нежными усиками-ниточками, торчащими в разные стороны. ≈
+                            Как и положено настоящему шотландскому аристократу, кот Бас имеет круглую голову с небольшими 
+                            загнутыми вперёд ушками. Огромные, медового цвета, глаза и аккуратный носик никого не оставит 
+                            равнодушным. Если внимательно присмотреться, то Вы обязательно увидите, что правый глаз котика 
+                            немного больше левого ­– не стоит, переживать, это не брак, так и должно быть задумано, чтобы 
+                            взгляд кота казался наивным, умилительно-удивлённым. Мягкое упитанное туловище, благодаря 
+                            пенопластовым гранулам внутри, котик достаточно устойчиво держится в сидячем положении. 
+                            У Баса коротенькие передние и задние лапки с вышитыми нежными бархатистыми подушечками. 
+                            На боку имеется нашивка с логотипом производителя.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/2.jpeg" alt="cat in the hood">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кот Басик в куртке с капюшоном</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Осень</a>
+                            <a class="item__category" href="#">С капюшоном</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_2" class="rating" value="1">
+                            <input type="radio" name="rating_cat_2" class="rating" value="2">
+                            <input type="radio" name="rating_cat_2" class="rating" value="3">
+                            <input type="radio" name="rating_cat_2" class="rating" value="4">
+                            <input type="radio" name="rating_cat_2" class="rating" value="5">
+                            <input type="radio" name="rating_cat_2" class="rating" value="6">
+                            <input type="radio" name="rating_cat_2" class="rating" value="7">
+                            <input type="radio" name="rating_cat_2" class="rating" value="8">
+                            <input type="radio" name="rating_cat_2" class="rating" value="9" checked>
+                            <input type="radio" name="rating_cat_2" class="rating" value="10">
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">2100 <span class="item__price-sign"></span></div>
+                            <div class="item__price-old">2500 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка от 3 дней</p>
+                        </div>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>
+                            На стиляге Басике обновка- невероятно уютная курточка желтого цвета, сшитая из меланжевого 
+                            флиса с начёсом. На потрясающе модной курточке с объемным капюшоном и накладными кармашками, 
+                            по задумке дизайнера, все швы наружу, застежка на молнии дополнена металлическими кнопками, 
+                            а капюшон забавными шнурками!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/3.jpg" alt="chef cat">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кот Басик шеф повар 5 звезд Мишлен Миллион книг о кулинарии</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Мишлен</a>
+                            <a class="item__category" href="#">5 звезд</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_3" class="rating" value="1">
+                            <input type="radio" name="rating_cat_3" class="rating" value="2">
+                            <input type="radio" name="rating_cat_3" class="rating" value="3">
+                            <input type="radio" name="rating_cat_3" class="rating" value="4">
+                            <input type="radio" name="rating_cat_3" class="rating" value="5">
+                            <input type="radio" name="rating_cat_3" class="rating" value="6">
+                            <input type="radio" name="rating_cat_3" class="rating" value="7">
+                            <input type="radio" name="rating_cat_3" class="rating" value="8">
+                            <input type="radio" name="rating_cat_3" class="rating" value="9">
+                            <input type="radio" name="rating_cat_3" class="rating" value="10" checked>
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">2790 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>
+                            Когда наш гурман Басик надевает свой белоснежный хлопковый поварской колпак, накрахмаленный 
+                            фартук с декоративной рыбкой и бантик-бабочку в цвет своих медовых глаз, на кухне закипает 
+                            работа, и все блюда однозначно становятся вкуснее, если приготовлены знаменитым кулинаром 
+                            Котовасии- талантливым Басиком!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/4.jpg" alt="cat in the raincoat">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кот Басик в плаще</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Осень</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_4" class="rating" value="1">
+                            <input type="radio" name="rating_cat_4" class="rating" value="2">
+                            <input type="radio" name="rating_cat_4" class="rating" value="3">
+                            <input type="radio" name="rating_cat_4" class="rating" value="4">
+                            <input type="radio" name="rating_cat_4" class="rating" value="5">
+                            <input type="radio" name="rating_cat_4" class="rating" value="6">
+                            <input type="radio" name="rating_cat_4" class="rating" value="7" checked>
+                            <input type="radio" name="rating_cat_4" class="rating" value="8">
+                            <input type="radio" name="rating_cat_4" class="rating" value="9">
+                            <input type="radio" name="rating_cat_4" class="rating" value="10">
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">1590 <span class="item__price-sign"></span></div>
+                            <div class="item__price-old">1800 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>
+                            Басик в элегантно-строгом плаще очень красивого королевского синего цвета. Двубортный плащ с пояском на металлической 
+                            пряжке, шлёвками на рукавах и пуговками благородного серебристого цвета. В комплекте шейный платочек из х/б ткани в 
+                            сложных оттенках синего.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/5.jpg" alt="catty lily in the vest">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кошечка Лили в жилетке</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Кошечка</a>
+                            <a class="item__category" href="#">Милота</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_5" class="rating" value="1">
+                            <input type="radio" name="rating_cat_5" class="rating" value="2">
+                            <input type="radio" name="rating_cat_5" class="rating" value="3">
+                            <input type="radio" name="rating_cat_5" class="rating" value="4">
+                            <input type="radio" name="rating_cat_5" class="rating" value="5">
+                            <input type="radio" name="rating_cat_5" class="rating" value="6">
+                            <input type="radio" name="rating_cat_5" class="rating" value="7">
+                            <input type="radio" name="rating_cat_5" class="rating" value="8">
+                            <input type="radio" name="rating_cat_5" class="rating" value="9">
+                            <input type="radio" name="rating_cat_5" class="rating" value="10" checked>
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">2600 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+                    <div class="item__desc">
+                        <p>
+                            На кошечке Ли-Ли тёпленький жилетик, связанный бабушкой-кошкой из ниток невероятно красивого цвета розовой герани. 
+                            Спереди жилетик украшает бантик из белоснежной репсовой ленты.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/6.jpg" alt="catty lily in the pajamas">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кошечка Лили в пижаме</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Кошечка</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_6" class="rating" value="1">
+                            <input type="radio" name="rating_cat_6" class="rating" value="2">
+                            <input type="radio" name="rating_cat_6" class="rating" value="3">
+                            <input type="radio" name="rating_cat_6" class="rating" value="4">
+                            <input type="radio" name="rating_cat_6" class="rating" value="5">
+                            <input type="radio" name="rating_cat_6" class="rating" value="6">
+                            <input type="radio" name="rating_cat_6" class="rating" value="7">
+                            <input type="radio" name="rating_cat_6" class="rating" value="8">
+                            <input type="radio" name="rating_cat_6" class="rating" value="9" checked>
+                            <input type="radio" name="rating_cat_6" class="rating" value="10">
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">1900 <span class="item__price-sign"></span></div>
+                            <div class="item__price-old">2000 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+
+                    <div class="item__desc">
+                        <p>
+                            Комплект для сна из мягкого х/б трикотажа в малиново-белую полоску. Пижамка состоит из 
+                            платьица с пышным рукавом и колпачка с длинным, завязывающимся концом. На грудке – украшение в
+                             виде белого атласного бантика. Упакована в подарочную коробку и станет прекрасным подарком для 
+                             любимой кошечки Ли-Ли!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="item">
+                    <div class="item__img">
+                        <img src="imgs/7.jpeg" alt="cat in pijamas">
+                    </div>
+
+                    <div class="item__info">
+                        <div class="item__title">
+                            <a href="#">Кот Басик в пижаме</a>
+                        </div>
+
+                        <div class="item__categorys">
+                            <a class="item__category" href="#">Подарки</a>
+                            <a class="item__category" href="#">Пижамка</a>
+                            <a class="item__category" href="#">Сон</a>
+                        </div>
+
+                        <div class="item__rating">
+                            <input type="radio" name="rating_cat_7" class="rating" value="1">
+                            <input type="radio" name="rating_cat_7" class="rating" value="2">
+                            <input type="radio" name="rating_cat_7" class="rating" value="3">
+                            <input type="radio" name="rating_cat_7" class="rating" value="4">
+                            <input type="radio" name="rating_cat_7" class="rating" value="5" checked>
+                            <input type="radio" name="rating_cat_7" class="rating" value="6">
+                            <input type="radio" name="rating_cat_7" class="rating" value="7">
+                            <input type="radio" name="rating_cat_7" class="rating" value="8">
+                            <input type="radio" name="rating_cat_7" class="rating" value="9">
+                            <input type="radio" name="rating_cat_7" class="rating" value="10">
+                        </div>
+
+                        <div class="item__price">
+                            <div class="item__price-new">1790 <span class="item__price-sign"></span></div>
+                            <div class="item__price-old">2000 <span class="item__price-sign"></span></div>
+                        </div>
+
+                        <div class="item__delivery">
+                            <p>Бесплатная доставка</p>
+                        </div>
+                    </div>
+                    <div class="item__desc">
+                        <p>
+                            Комплект для сна из мягкого х/б трикотажа в малиново-белую полоску. Пижамка состоит из платьица с пышным рукавом и 
+                            колпачка с длинным, завязывающимся концом. На грудке – украшение в виде белого атласного бантика. Упакована в 
+                            подарочную коробку и станет прекрасным подарком для любимой кошечки Ли-Ли!
+                        </p>
+                    </div>
+                </article>
+            </sectop>
+
+        </div>
+    </main>
+</body>
+
+</html>

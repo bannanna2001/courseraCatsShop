@@ -1,0 +1,339 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* styles for catsPage */
+:root{
+    font-size: 12px;
+}
+
+header{
+    margin: 2em 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.item{
+    float: left;
+    width: 40vw;
+    margin-bottom: 1em;
+}
+
+.item:nth-child(2n){
+    margin: 0 0 0 10vw;
+}
+
+.item:nth-child(2n+1){
+    clear: both;
+}
+
+.item__img > img{
+    width: 100%;
+    height: 35vw;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+.item__img:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+.item__img:hover ~ .item__info > .item__title > a,
+.item__title > a:hover{
+    color: red;
+}
+
+.item__title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.item__category{
+    display: inline-block;
+}
+
+.item__category{
+    color: #1b1d1d;
+}
+
+.item__categorys > .item__category::after{
+    content: " - ";
+}
+
+.item__categorys > .item__category:last-child::after{
+    content: none;
+}
+
+.item__price-new{
+    display: inline-block;
+    color: #96070A;
+    font-size: 2em;
+}
+
+.item__price-old{
+    display: inline-block;
+    color: #1b1d1d;
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+.item__price-sign::after{
+    content: "\20BD";
+}
+
+.item__desc{
+    color: #1b1d1d;
+}
+
+/* radio select */
+.radio{
+    display: inline-block;
+    margin-bottom: 5em;
+}
+.radio-list:checked ~ .items__container > .item{
+    display: inline-block;
+    float: none;
+    width: 100%;
+}
+
+.radio-list:checked ~ .items__container > .item > .item__info,
+.radio-list:checked ~ .items__container > .item > .item__img{
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+}
+
+.radio-list:checked ~ .items__container > .item > .item__desc{
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+.radio-list:checked ~ .items__container > .item{
+    display: inline-block;
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+/* rating */
+.item__rating{
+    position: relative;
+    width: 80px;
+    height: 16px;
+
+    background-image: url(imgs/starOff.svg);
+    background-size: 16px 16px;
+}
+
+.item__rating:focus-within{
+    outline: .2rem solid #4a90e2;
+}
+
+.rating{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 8px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    margin: 0;
+}
+
+.rating:focus{
+    outline: none;
+}
+
+.rating:hover,
+.rating:checked{
+    background-image: url(imgs/starOn.svg);
+}
+
+.rating:hover ~ .rating{
+    background-image: url(imgs/starOff.svg);
+}
+
+.rating:nth-of-type(1){
+    width: 8px;
+    z-index: 10;
+}
+
+.rating:nth-of-type(2){
+    width: 16px;
+    z-index: 9;
+}
+
+.rating:nth-of-type(3){
+    width: 24px;
+    z-index: 8;
+}
+
+.rating:nth-of-type(4){
+    width: 32px;
+    z-index: 7;
+}
+
+.rating:nth-of-type(5){
+    width: 40px;
+    z-index: 6;
+}
+
+.rating:nth-of-type(6){
+    width: 48px;
+    z-index: 5;
+}
+
+.rating:nth-of-type(7){
+    width: 56px;
+    z-index: 4;
+}
+
+.rating:nth-of-type(8){
+    width: 64px;
+    z-index: 3;
+}
+
+.rating:nth-of-type(9){
+    width: 72px;
+    z-index: 2;
+}
+
+.rating:nth-of-type(10){
+    width: 80px;
+    z-index: 1;
+}
+
+@media all and (min-width: 780px) {
+    .item{
+        width: 29vw;
+    }
+
+    .item:nth-child(n){
+        clear: none;
+        margin: 0;
+    }
+    
+    .item:nth-child(3n - 1){
+        margin: 0 1.5vw;
+    }
+    
+    .item:nth-child(3n+1){
+        clear: both;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    :root{
+        font-size: 16px;
+    }
+
+    .item{
+        width: 20vw;
+    }
+
+    .item:nth-child(n){
+        clear: none;
+    }
+
+    .item:nth-child(4n+1){
+        clear: both;
+    }
+
+    .item:nth-child(4n + 2){
+        margin: 0 1.6em;
+    }
+    
+    .item:nth-child(4n + 3){
+        margin: 0 1.6em 0 ;
+    }
+}
